@@ -5,7 +5,12 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="Features", glue = {"StepDefinition"})
+@CucumberOptions(
+        plugin = {"pretty","html:CucumberReports"},
+        features="Features",
+        glue = {"StepDefinition"},
+        monochrome = false
+)
 public class GoogleInRunner {
 
 }
