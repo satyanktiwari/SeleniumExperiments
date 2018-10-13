@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="My suite">
+
+<listeners>
+    <listener class-name="com.listners.customListner" />
+</listeners>
+
+  <test name="AppTest">
+		<classes>
+			<class name="com.selenium.AppTest" />
+		</classes>
+	</test>
+	
+	<test name="SampleTest">
+		<classes>
+			<class name="com.selenium.FirstTest" />
+		</classes>
+	</test>
+</suite>
