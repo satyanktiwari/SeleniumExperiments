@@ -10,7 +10,7 @@
 .idea/*.xml
 *.stackdump
 *.iml
-target.*
+target/.*
 
 # Packages #
 ############

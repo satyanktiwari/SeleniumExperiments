@@ -6,11 +6,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty","html:CucumberReports"},
+        plugin = {"pretty","html:target/cucumber-html-reports"},
         features="Features",
-        glue = {"StepDefinition"},
-        monochrome = false
+        glue = {"StepDefinition"}//,
+//        monochrome = false
 )
-public class GoogleInRunner {
+public class GoogleInRunnerTest {
 
 }

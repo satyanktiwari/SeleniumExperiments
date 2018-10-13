@@ -21,7 +21,9 @@ public class FirstTest {
     @BeforeTest
     public void setUP() {
         report = new ExtentReports(Constatnts.htmlReportName, true);
+
         test = report.startTest("Go to google.in");
+
         System.setProperty("webdriver.chrome.driver", Constatnts.chromeDriverpath);
         driver = new ChromeDriver();
         test.log(LogStatus.INFO, "Chrome started");
