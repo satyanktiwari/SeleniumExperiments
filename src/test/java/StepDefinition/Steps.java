@@ -1,7 +1,6 @@
 package StepDefinition;
 
-import com.relevantcodes.extentreports.LogStatus;
-import com.utils.Constatnts;
+import com.utils.Constants;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -12,7 +11,7 @@ public class Steps {
     private WebDriver driver = null;
     @Given("^chrome driver is open$")
     public void chrome_driver_is_open()throws Throwable	{
-        System.setProperty("webdriver.chrome.driver", Constatnts.chromeDriverpath);
+        System.setProperty("webdriver.chrome.driver", Constants.chromeDriverpath);
         driver = new ChromeDriver();
     }
 

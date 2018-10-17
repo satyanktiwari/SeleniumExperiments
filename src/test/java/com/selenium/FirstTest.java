@@ -3,13 +3,10 @@ package com.selenium;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import com.utils.Constatnts;
-import org.junit.After;
-import org.junit.Before;
+import com.utils.Constants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -20,11 +17,11 @@ public class FirstTest {
 
     @BeforeTest
     public void setUP() {
-        report = new ExtentReports(Constatnts.htmlReportName, true);
+        report = new ExtentReports(Constants.htmlReportName, true);
 
         test = report.startTest("Go to google.in");
 
-        System.setProperty("webdriver.chrome.driver", Constatnts.chromeDriverpath);
+        System.setProperty("webdriver.chrome.driver", Constants.chromeDriverpath);
         driver = new ChromeDriver();
         test.log(LogStatus.INFO, "Chrome started");
     }

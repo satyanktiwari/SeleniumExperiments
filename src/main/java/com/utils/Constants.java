@@ -2,7 +2,7 @@ package com.utils;
 
 import java.io.File;
 
-public class Constatnts {
+public class Constants {
 
     public static final String driverBasePath = new File("").getAbsoluteFile().toString()+ File.separator + "Resources"+ File.separator + "BrowserDriver" + File.separator;
     public static final String chromeDriverpath = driverBasePath + "chromedriver.exe";
