@@ -6,6 +6,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.utils.Constants;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -13,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Steps {
+
         private WebDriver driver = null;
         ExtentReports report;
         ExtentTest test;
@@ -22,20 +24,24 @@ public class Steps {
             report = new ExtentReports(Constants.CucumberHtmlReportName,false);
             test = report.startTest("Running 2 scenarios");
             System.setProperty("webdriver.chrome.driver", Constants.chromeDriverpath);
-            driver = new ChromeDriver();
+
         }
+
 
 
     @Given("^chrome driver is open$")
     public void chrome_driver_is_open()throws Throwable	{
 
-        test.log(LogStatus.INFO,"Browser launched");
+        driver = new ChromeDriver();
+        test.log(LogStatus.INFO,"Chrome launched");
+
     }
 
     @When("^url is entered$")
     public void url_is_entered()throws Throwable	{
         driver.get("https://google.co.in");
         test.log(LogStatus.INFO,"Url entered");
+
 
     }
 
@@ -75,6 +81,6 @@ public class Steps {
     public void tearDown(){
             report.endTest(test);
             report.flush();
-        driver.close();
+            driver.close();
     }
 }
