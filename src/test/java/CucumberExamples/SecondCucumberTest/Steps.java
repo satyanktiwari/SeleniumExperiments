@@ -1,4 +1,4 @@
-package StepDefinition;
+package CucumberExamples.SecondCucumberTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
