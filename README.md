@@ -1,6 +1,5 @@
 # SeleniumExperiments
 
 
-FirstTest contains implementation of ExtentReports
-FirstcucumberTest.feature contains the same scenario as FirstTest,
-but in BDD
+Project for creating an experimental framework to try out various features available for implementaion using webdriver 3
+ 
