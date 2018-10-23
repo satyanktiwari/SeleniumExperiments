@@ -41,6 +41,6 @@ public class gridSample1 {
 
     public void simpletest(){
         driver.get(baseUrl);
-        Assert.assertEquals("google",driver.getTitle());
+        Assert.assertEquals(driver.getTitle(),"Google");
     }
 }
