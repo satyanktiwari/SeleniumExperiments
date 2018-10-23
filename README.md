@@ -34,3 +34,5 @@ Run the following command
 
     java -Dwebdriver.gecko.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\geckodriver.exe" -jar selenium-server-standalone-<version number>.jar -role webdriver -hub http://<Ip address of the hub obtained from the 1st step>:4444/grid/register -port 5566
 
+This is for chrome
+`java -Dwebdriver.chrome.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\chromedriver.exe" -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://192.168.56.1:4444/grid/register -port 5566`
