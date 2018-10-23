@@ -28,3 +28,6 @@ Then either on machine B or same machine Go to the directory containing server-s
 Run the following command
 
     java -Dwebdriver.gecko.driver="path to gecko driver\geckodriver.exe" -jar selenium-server-standalone-<version number>.jar -role webdriver -hub http://<Ip address of the hub obtained from the 1st step>:4444/grid/register -port <5566 or any port which is free>
+    
+    ``**Interesting read
+    https://rationaleemotions.wordpress.com/2012/01/23/setting-up-grid2-and-working-with-it/**``
