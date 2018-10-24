@@ -20,7 +20,7 @@ public class gridSample1 {
 
     public void setUP() throws MalformedURLException{
         baseUrl = "https://google.co.in";
-        nodeUrl = "http://192.168.56.1:4444/wd/hub";
+        nodeUrl = "http://localhost:4444/wd/hub";
         DesiredCapabilities capability = DesiredCapabilities.firefox();
         capability.setBrowserName("firefox");
         String platform =  capability.getPlatform().toString();

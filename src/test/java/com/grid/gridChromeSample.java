@@ -21,7 +21,7 @@ public class gridChromeSample {
 
     public void setUP() throws MalformedURLException{
         baseUrl = "https://google.co.in";
-        nodeUrl = "http://192.168.56.1:4444/wd/hub";
+        nodeUrl = "http://localhost:4444/wd/hub";
         System.setProperty("webdriver.chrome.driver", Constants.chromeDriverpath);
         DesiredCapabilities capability = DesiredCapabilities.chrome();
         capability.setBrowserName("chrome");
