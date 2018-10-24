@@ -38,8 +38,8 @@ Following command is required when only geckoDriver is needed
 
 Following command is required when only chromeDriver is needed
 
-`java -Dwebdriver.chrome.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\chromedriver.exe" -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://192.168.56.1:4444/grid/register -port 5566`
+`java -Dwebdriver.chrome.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\chromedriver.exe" -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://localhost:4444/grid/register -port 5566`
 
 Use the following for both firefox and chrome
 
-`java -Dwebdriver.chrome.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\chromedriver.exe" -Dwebdriver.gecko.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\geckodriver.exe" -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://192.168.56.1:4444/grid/register -port 5566 `
+`java -Dwebdriver.chrome.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\chromedriver.exe" -Dwebdriver.gecko.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\geckodriver.exe" -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://localhost:4444/grid/register -port 5566 `
