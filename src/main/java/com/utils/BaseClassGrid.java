@@ -1,26 +1,23 @@
-package com.grid;
+package com.utils;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class gridChromeOptions {
-
-     static WebDriver driver;
+public class BaseClassGrid {
+    public WebDriver driver;
 
 
 
     @BeforeClass
-
-    public static void setUP()throws MalformedURLException {
+    public  void setUP()throws MalformedURLException {
         DesiredCapabilities capability = new DesiredCapabilities();
         capability.setPlatform(Platform.ANY);
         capability.setBrowserName("chrome");
@@ -28,19 +25,13 @@ public class gridChromeOptions {
         ChromeOptions options = new ChromeOptions();
         options.merge(capability);
         String hubUrl;
-            hubUrl = "http://localhost:4444/wd/hub";
+        hubUrl = "http://localhost:4444/wd/hub";
 
-            driver = new RemoteWebDriver(new URL(hubUrl), options);
+        driver = new RemoteWebDriver(new URL(hubUrl), options);
     }
 
-    @Test
-    public  void test(){
-        driver.get("https://www.freecrm.com/features.html");
-        driver.getTitle();
-    }
-@AfterClass
-    public static void tearDown(){
+    @AfterClass
+    public  void tearDown(){
         driver.quit();
-}
-
+    }
 }

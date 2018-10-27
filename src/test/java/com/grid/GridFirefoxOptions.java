@@ -13,7 +13,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class gridFirefoxOptions {
+public class GridFirefoxOptions {
 
      static WebDriver driver;
 

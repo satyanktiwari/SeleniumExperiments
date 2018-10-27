@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class gridSample1 {
+public class GridSample1 {
 
     WebDriver driver;
     String baseUrl, nodeUrl;
