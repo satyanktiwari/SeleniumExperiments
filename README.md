@@ -13,6 +13,9 @@ This project implements
 
 `TestNg framework`
 
+Selenium Grid Architecture
+![Alt text](Resources/images/GridArchitecture.jpg?raw=true "Selenium Grid Architecture")
+
 commands for invoking grid:
 
 **Steps for starting server**
