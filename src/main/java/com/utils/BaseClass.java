@@ -9,25 +9,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
 public class BaseClass {
-//    WebDriver driver;
-//    @Parameters("BrowserName")
-//    public void launchBrowser( String BrowserName)throws Exception{
-//
-//        if (BrowserName.equalsIgnoreCase("chrome")){
-//            //set path to chromedriver.exe
-//            System.setProperty("webdriver.chrome.driver",Constants.chromeDriverpath);
-//            //create chrome instance
-//            driver = new ChromeDriver();
-//
-//        }else if (BrowserName.equalsIgnoreCase("friefox")){
-//System.setProperty("webdriver.firefox.marionette",Constants.firefoxDriverPath);
-//driver = new FirefoxDriver();
-//        }else{
-//    //If no browser passed throw exception
-//            throw new Exception("Browser is not correct");
-//        }
-//    }
-
     public WebDriver driver = null;
     public ExtentReports report;
     public ExtentTest test;
