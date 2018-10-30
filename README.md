@@ -41,8 +41,18 @@ Following command is required when only geckoDriver is needed
 
 Following command is required when only chromeDriver is needed
 
-`java -Dwebdriver.chrome.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\chromedriver.exe" -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://localhost:4444/grid/register -port 5566`
+_`java -Dwebdriver.chrome.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\chromedriver.exe" -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://localhost:4444/grid/register -port 5566`_
 
 Use the following for both firefox and chrome
 
-`java -Dwebdriver.chrome.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\chromedriver.exe" -Dwebdriver.gecko.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\geckodriver.exe" -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://localhost:4444/grid/register -port 5566 `
+_`java -Dwebdriver.chrome.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\chromedriver.exe" -Dwebdriver.gecko.driver="E:\gitrepo\SeleniumExperiments\Resources\BrowserDriver\geckodriver.exe" -jar selenium-server-standalone-3.14.0.jar -role webdriver -hub http://localhost:4444/grid/register -port 5566 `_
+
+
+**testNg Cucumber Runner:**
+
+Make sure all the cucumber related jars are of the same version
+e.g. in the pom all version are 1.2.5
+ 
+Check by running the following command in the Terminal and then search for cucumber in the output
+
+_`mvn dependency:tree`_
