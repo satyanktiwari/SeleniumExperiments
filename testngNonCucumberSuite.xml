@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="My suite">
+<suite name="My suite" allow-return-values="true" parallel="none">
 
 <listeners>
     <listener class-name="com.listners.customListner" />
@@ -17,3 +17,4 @@
 		</classes>
 	</test>
 </suite>
+
