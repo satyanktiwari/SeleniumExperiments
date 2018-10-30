@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CucumberSuite" allow-return-values="true" parallel="none">
+
+<listeners>
+    <listener class-name="com.listners.customListner" />
+</listeners>
+
+	
+	<test name="BackGroundSampleRunnerTest">
+		<classes>
+			<class name="CucumberExamples.SecondCucumberTest.testNgBackGroundRunnerTest" />
+		</classes>
+	</test>
+</suite>
+

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All suite">
+	<suite-files>
+		<suite-file path="testngNonCucumberSuite.xml"/>
+		<suite-file path="testngCucumberSuite.xml"/>
+	</suite-files>
+
+</suite>
+

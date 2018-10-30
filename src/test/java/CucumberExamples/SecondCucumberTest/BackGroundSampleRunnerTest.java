@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"pretty","html:target/cucumber-html-reports"},
-        features="E:\\gitrepo\\SeleniumExperiments\\src\\test\\java\\CucumberExamples\\SecondCucumberTest\\BackgroundSample.feature",
-        glue = {"CucumberExamples/SecondCucumberTest"}//,
+        features="C:\\Users\\p7105756\\IdeaProjects\\SeleniumExperiments\\src\\test\\java\\CucumberExamples\\SecondCucumberTest\\BackgroundSample.feature",
+        glue = {"CucumberExamples/SecondCucumberTest/testNgSteps"}//,
 //        monochrome = false
 )
 public class BackGroundSampleRunnerTest {

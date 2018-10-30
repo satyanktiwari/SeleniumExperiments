@@ -56,3 +56,5 @@ e.g. in the pom all version are 1.2.5
 Check by running the following command in the Terminal and then search for cucumber in the output
 
 _`mvn dependency:tree`_
+
+Ref: https://stackoverflow.com/questions/23559259/error-while-running-cucumber-in-junit
