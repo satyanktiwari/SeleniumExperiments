@@ -7,11 +7,13 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty","html:target/cucumber-html-reports",
-                "json:target/cucumber-jvm-report/cucumber.json",
-                "junit:target/cucumber.xml",
-                "rerun:target/rerun.txt"},
-        features="C:\\Users\\p7105756\\IdeaProjects\\SeleniumExperiments\\src\\test\\java\\CucumberExamples\\SecondCucumberTest\\BackgroundSample.feature",
+        plugin = {
+                "pretty", "html:target/cucumber/cucumber-html-reports",
+                "json:target/cucumber/cucumber.json",
+                "junit:target/cucumber/cucumber.xml",
+                "rerun:target/cucumber/rerun.txt"
+        },
+        features = "C:\\Users\\p7105756\\IdeaProjects\\SeleniumExperiments\\src\\test\\java\\CucumberExamples\\SecondCucumberTest\\BackgroundSample.feature",
         glue = {"CucumberExamples/SecondCucumberTest"}//,
 //        monochrome = false
 )
